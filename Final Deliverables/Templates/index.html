@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+        *{
+   margin: 0;
+   padding: 0; 
+}
+
+
+
+
+
+
+.title{
+    width:100%;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+nav{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+
+nav li{
+    display: inline;
+    padding-left:45px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+nav li a{
+    color: #333;
+    text-decoration: none;
+    padding: 13px;
+    transition: .3s ease
+}
+
+.nav-element :hover{
+    color: royalblue;
+}
+
+.active{
+    color: royalblue;
+}
+    </style>
+    <body>
+        <div class="title-container">
+            <h1 class="title">Real-Time Communication System Powered By AI For Specially Abled</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-element active"><a href="#">Home</a></li>
+                <li class="nav-element"><a href="#">About</a></li>
+            </ul>
+            <img src="{{url_for('video_feed')}}" width="100%">
+            <div class="hero">
+                <p class="hero-text">This project is going to act as an interpreter deaf-mute and normal people. Nowadays, deaf and dumb people facing many difficulties in communicating with normal people. This project is an intiative to solve this problem. We have created an AI model using Convolutional Neural Network. The AI model is trained on hand gestures of American Sign Language(ASL) Alphabets. We have integrated this model with Flask UI. It can able to detect all Alphabets in ASL.</p>
+                
+            </div>
+        </nav>
+    </body>
+</html>
